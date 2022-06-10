@@ -13,6 +13,11 @@ export const AuthContainer = styled('div', {
   backgroundPosition: 'center',
   backgroundSize: 'cover',
 
+  '@media (max-width: 850px)': {
+    backgroundPosition: 'left',
+    padding: '0 1rem'
+  },
+
   'img': {
     width: '16rem',
     marginBottom: '2rem'
@@ -56,6 +61,17 @@ export const Box = styled('div', {
     color: '$white',
     fontWeight: '$light',
     opacity: 0.6
+  },
+
+  '@media (max-width: 500px)': {
+    'h2': {
+      fontSize: '1.3rem',
+    },
+
+    'p': {
+      fontSize: '0.9rem',
+      
+    }
   }
 });
 
@@ -108,6 +124,11 @@ export const FormInput = styled('form', {
       fontSize: '0.7rem',
       textUnderlineOffset: '0.2rem',
       color: '$green500'
+    },
+
+    '@media (max-width: 500px)': {
+      flexDirection: 'column',
+      gap: '1rem'
     }
   }
 });
